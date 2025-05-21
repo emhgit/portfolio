@@ -1,25 +1,24 @@
 import { useState } from 'react'
 import './App.css'
+import { Routes, Route } from "react-router-dom";
 import NavBar from "./features/NavBar/NavBar";
+import Hero from "./components/Hero";
+import AboutMe from "./pages/AboutMe";
+import MyProjects from "./pages/MyProjects";
+import Contact from "./pages/Contact";
+
 
 function App() {
   return (
     <>
       <NavBar />
-
       <main>
-        <div id="image-container">
-          <img src="src\assets\image-1.jpg" alt="image-1" width="200"  />
-        </div>
-
-        <section id="hero">
-          <h1>Elliott Harper</h1>
-          <h2>Full-Stack Developer</h2>
-          <div id="socials-container"></div>
-          <button>About Me</button>
-        </section>
+        <Routes>
+          <Route path="/about-me" element={<AboutMe />}></Route>
+          <Route path="/my-projects" element={<MyProjects />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+        </Routes>
       </main>
-      
     </>
   )
 }
