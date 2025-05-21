@@ -5,7 +5,7 @@ import Hero from "./components/Hero/Hero";
 import AboutMe from "./pages/AboutMe";
 import MyProjects from "./pages/MyProjects";
 import Contact from "./pages/Contact";
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
