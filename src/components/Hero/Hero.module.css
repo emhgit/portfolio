@@ -9,7 +9,7 @@ main {
 
 #image-container {
     display: flex;
-    background-color: var(--black);
+    background-color: var(--banner-color);
     width: 12rem;
     height: 12rem;
     border-radius: 50%;
@@ -30,18 +30,18 @@ main {
     border: none;
     border-radius: 12px;
     font-size: 2rem;
-    background-color: var(--light-gray);
+    background-color: var(--banner-color);
     transition: background 0.2s;
 }
 
 #hero button:hover {
-    background-color: var(--medium-gray);
+    background-color: var(--banner-secondary-color);
     color: var(--white);
 }
 
 #hero button .nav-link {
     text-decoration: none;
-    color: var(--black)
+    color: var(--text-color)
 }
 
 

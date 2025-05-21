@@ -1,5 +1,6 @@
 import styles from "./NavBar.module.css";
 import { Link } from 'react-router-dom';
+import ThemeToggleButton from '../ThemeToggleButton/ThemeToggleButton.jsx';
 
 function NavBar(){
     return (
@@ -10,6 +11,7 @@ function NavBar(){
                 <li ><Link to="/my-projects" className={styles["nav-link"]}>My Projects</Link></li>
                 <li ><Link to="/contact" className={styles["nav-link"]}>Contact</Link></li>
             </ul>
+            <ThemeToggleButton />
         </nav>
     );
 }

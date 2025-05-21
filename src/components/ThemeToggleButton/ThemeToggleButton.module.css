@@ -1,0 +1,19 @@
+@import url(/src/variables.css);
+
+button {
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    background-color: var(--banner-teritary-color);
+    transition: background 0.2s;
+    color: var(--text-color);
+}
+
+button:hover {
+    background-color: var(--banner-secondary-color);
+}
+

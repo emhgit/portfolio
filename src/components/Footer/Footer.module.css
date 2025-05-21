@@ -6,10 +6,10 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--light-gray);
+    background-color: var(--banner-color);
     padding: 1rem;
 }
 
 a {
-    color: var(--black)
+    color: var(--text-color)
 }

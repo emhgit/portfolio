@@ -1,7 +1,16 @@
 :root {
     --primary-font: Arial;
-    --white: #fff;
-    --black: #222;
-    --light-gray: #f5f5f5;
-    --medium-gray: #e0e0e0; 
+    --bg-color: #fff;
+    --text-color: #222;
+    --banner-color: #f5f5f5;
+    --banner-secondary-color: #e0e0e0; 
+    --banner-tertiary-color: #f3f3f3; 
+}
+
+[data-theme='dark'] {
+    --bg-color: #222;
+    --text-color: #fff;
+    --banner-color: #292929;
+    --banner-secondary-color: #3f3f3f;
+    --banner-tertiary-color: #181818; 
 }
