@@ -11,9 +11,10 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-      <NavBar />
+      <NavBar />    
       <main>
         <Routes>
+          <Route path="/" element={<Hero />}></Route>
           <Route path="/about-me" element={<AboutMe />}></Route>
           <Route path="/my-projects" element={<MyProjects />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
