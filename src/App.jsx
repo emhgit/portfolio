@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import './App.css'
 import { Routes, Route } from "react-router-dom";
-import NavBar from "./features/NavBar/NavBar";
+import NavBar from "./components/NavBar/NavBar";
 import Hero from "./components/Hero";
 import AboutMe from "./pages/AboutMe";
 import MyProjects from "./pages/MyProjects";
 import Contact from "./pages/Contact";
+import Footer from './components/Footer';
 
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
       </main>
+      <Footer />
     </>
   )
 }
