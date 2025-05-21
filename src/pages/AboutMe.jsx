@@ -2,7 +2,15 @@ import React from 'react'
 
 const AboutMe = () => {
   return (
-    <div>AboutMe</div>
+    <>
+    <h1>About Me</h1>
+
+    <div >
+      <img src="" alt="image-1" />
+    </div>
+    </>
+
+    
   )
 };
 

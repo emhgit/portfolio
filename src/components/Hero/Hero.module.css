@@ -3,6 +3,7 @@
 main {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 2rem;
     gap: 2rem;
 }
@@ -10,8 +11,8 @@ main {
 #image-container {
     display: flex;
     background-color: var(--banner-color);
-    width: 12rem;
-    height: 12rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: 50%;
 }
 
@@ -21,14 +22,26 @@ main {
 }
 
 #hero {
-    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#hero h1 {
+    font-size: 5rem;
+}
+
+#hero h2 {
+    font-size: 3rem;
 }
 
 #hero button {
+    text-align: center;
     padding: 2rem 3rem;
     font-weight: bold;
     border: none;
-    border-radius: 12px;
+    border-radius: 24px;
     font-size: 2rem;
     background-color: var(--banner-color);
     transition: background 0.2s;
@@ -44,5 +57,36 @@ main {
     color: var(--text-color)
 }
 
+#socials-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#socials-container img {
+    margin: 20px;
+    width: 80px;
+    height: 80px;
+}
 
 
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 640px){
+    #hero h1 {
+        font-size: 3rem;
+    }
+    #hero h2 {
+        font-size: 2rem;
+    }
+}

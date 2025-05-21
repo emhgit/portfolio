@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {Link} from "react-router-dom"
 import styles from "./Hero.module.css";
+import { ThemeContext } from '../../context/ThemeContext';
 
 const Hero = () => {
+  const {theme, toggleTheme} = useContext(ThemeContext);
   return (
     <main>
+
         <div id={styles["image-container"]}>
             <img src="" alt="image-1" />
         </div>
@@ -14,7 +17,14 @@ const Hero = () => {
             <h2>Full-Stack Developer</h2>
             <div id="socials-container"></div>
             <button><Link to="/about-me" className={styles["nav-link"]}>About Me</Link></button>
+            <section id={styles["socials-container"]}>
+              <a href="https://github.com/emhgit"><img src={theme === 'light' ? "/src/assets/github-logo.png" : "/src/assets/light-github-logo.png"} alt="github logo" /></a>
+              <a href="https://leetcode.com/u/emhleet/"><img src="/src/assets/leetcode-logo.png" alt="leetcode logo" /></a>
+              
+              <img src={theme === 'light' ? "/src/assets/dark-hackerrank-logo.png" : "/src/assets/hackerrank-logo.png"} alt="hackerrank logo" />
+          </section>
         </section>
+
     </main>
   )
 }
