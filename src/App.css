@@ -1,1 +1,10 @@
-/* TODO: add CSS to app */
+@import url(/src/index.css);
+
+main {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+main #image-container img {
+    border-radius: 50%;
+}
