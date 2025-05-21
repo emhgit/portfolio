@@ -17,3 +17,10 @@ button:hover {
     background-color: var(--banner-secondary-color);
 }
 
+@media (max-width: 600px) {
+    button {
+        padding: .25rem .5rem;
+        font-size: .5rem;
+    }
+}
+
