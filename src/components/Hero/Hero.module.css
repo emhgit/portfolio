@@ -1,0 +1,48 @@
+@import url(/src/variables.css);
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+#image-container {
+    display: flex;
+    background-color: var(--black);
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+
+#image-container img {
+    justify-self: center;
+    align-self: center;
+}
+
+#hero {
+    font-size: 2rem;
+}
+
+#hero button {
+    padding: 2rem 3rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    font-size: 2rem;
+    background-color: var(--light-gray);
+    transition: background 0.2s;
+}
+
+#hero button:hover {
+    background-color: var(--medium-gray);
+    color: var(--white);
+}
+
+#hero button .nav-link {
+    text-decoration: none;
+    color: var(--black)
+}
+
+
+
