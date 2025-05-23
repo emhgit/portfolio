@@ -13,9 +13,7 @@ const AboutMe = () => {
 
     <TextCard 
       title="" 
-      body="Hardworking honors student with a passion for computer science, 
-      problem-solving, and leadership. Strong technical skills in Java, OOP, and data structures, 
-      complemented by leadership experience in coding club and community volunteering."
+      body="Professional Bio..."
     />
     <TextCard 
       title="My Skills" 

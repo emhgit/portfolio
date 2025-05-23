@@ -20,7 +20,14 @@ const Hero = () => {
               <a href="https://leetcode.com/u/emhleet/"><img src="/src/assets/leetcode-logo.png" alt="leetcode logo" /></a>
               <a href="https://www.hackerrank.com/profile/emhhacker"><img src={theme === 'light' ? "/src/assets/dark-hackerrank-logo.png" : "/src/assets/hackerrank-logo.png"} alt="hackerrank logo" /></a>
             </section>
-            <button><Link to="/about-me" className={styles["nav-link"]}>About Me</Link></button>
+            <div id={styles["button-container"]}>
+              <button className={styles["button"]}><Link to="/about-me" className={styles["nav-link"]}>About Me</Link></button>
+              
+              <button className={styles["button"]}>
+                <a className={styles["nav-link"]} href="/src/assets/resume_v1.pdf" target="_blank">My Resume</a>
+              </button>
+            </div>
+            
         </section>
 
     </main>

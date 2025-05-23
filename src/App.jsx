@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Hero from "./components/Hero/Hero";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import MyProjects from "./pages/MyProjects/MyProjects";
-import Contact from "./pages/Contact";
+import Contact from "./pages/Contact/Contact";
 import Footer from './components/Footer/Footer';
 
 
