@@ -3,7 +3,7 @@ import styles from "./ContactForm.module.css";
 
 const ContactForm = () => {
   return (
-    <form id={styles["contact-form"]} action="" >
+    <form id={styles["contact-form"]} action={null} >
         <fieldset>
             <label>Name (Required)</label> 
             <input type="text" id="first" name="first" placeholder="First Name" required></input>

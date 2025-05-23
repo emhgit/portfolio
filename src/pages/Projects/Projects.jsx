@@ -2,10 +2,10 @@ import React from 'react'
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import styles from "./MyProjects.module.css";
 
-const MyProjects = () => {
+const Projects = () => {
   return (
-    <div class={styles["column-container"]}>
-      <h1>MyProjects</h1>
+    <div className={styles["column-container"]}>
+      <h1>My Projects</h1>
 
       <div id={styles["projects-container"]}>
 
@@ -36,4 +36,4 @@ const MyProjects = () => {
   )
 };
 
-export default MyProjects;
+export default Projects;

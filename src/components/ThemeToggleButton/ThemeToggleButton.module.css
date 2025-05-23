@@ -15,6 +15,7 @@ button {
 
 button:hover {
     background-color: var(--banner-secondary-color);
+    cursor: pointer;
 }
 
 @media (max-width: 600px) {

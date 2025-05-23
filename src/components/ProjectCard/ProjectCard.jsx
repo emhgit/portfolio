@@ -8,7 +8,7 @@ const ProjectCard = (props) => {
     const githubLink = props["github-link"];
 
     return (
-        <div class={styles["project-card"]}>
+        <div className={styles["project-card"]}>
             <h2>{title}</h2>
             <img src={imageSrc} alt="thumbnail" width="480px" height="270px"></img>
             <p>{description}</p>

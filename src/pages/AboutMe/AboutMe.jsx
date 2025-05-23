@@ -8,11 +8,11 @@ const AboutMe = () => {
     <h1>About Me</h1>
 
     <div >
-      <img src="" alt="image-1" />
+      <img src={null} alt="image-1" />
     </div>
 
     <TextCard 
-      title="" 
+      title={null}
       body="Professional Bio..."
     />
     <TextCard 
