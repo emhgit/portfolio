@@ -1,12 +1,11 @@
-@import url("../../variables.css");
+@import url(/src/variables.css);
 
-#about-me {
+.form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
 }
 
-#about-me h1 {
+.form-container h1 {
     font-size: 2rem;
 }

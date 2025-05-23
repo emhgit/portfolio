@@ -4,7 +4,7 @@
     --text-color: #222;
     --banner-color: #f5f5f5;
     --banner-secondary-color: #e0e0e0; 
-    --banner-tertiary-color: #f3f3f3; 
+    --banner-tertiary-color: #ececec; 
 }
 
 [data-theme='dark'] {
@@ -12,5 +12,5 @@
     --text-color: #fff;
     --banner-color: #292929;
     --banner-secondary-color: #3f3f3f;
-    --banner-tertiary-color: #181818; 
+    --banner-tertiary-color: #1d1d1d; 
 }

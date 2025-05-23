@@ -57,7 +57,6 @@ main {
 
 #hero .button:hover {
     background-color: var(--banner-secondary-color);
-    color: var(--white);
 }
 
 #hero .button .nav-link {

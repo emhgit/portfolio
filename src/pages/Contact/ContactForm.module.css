@@ -1,0 +1,40 @@
+@import url(/src/variables.css);
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 2rem 3rem;
+}
+
+#contact-form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 2rem 3rem;
+    border-radius: 8px;
+    background-color: var(--banner-tertiary-color);
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+#contact-form fieldset input {
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--banner-color);
+    color: var(--text-color);
+}
+
+#contact-form button {
+    align-self: center;
+    background-color: var(--banner-color);
+    padding: 1rem 2.5rem;
+    transition: background 0.2s;
+    font-size: 1rem;
+}
+
+#contact-form button:hover {
+    background-color: var(--banner-secondary-color);
+    cursor: pointer;
+}
