@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from "./ContactForm.module.css";
 
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxdnfEh04uQ7uyJM8iTGBKghqdw7U-vFwQ5t6YAl4IuUH89EOAEziwIAyQekIq0S4lBzg/exec";
+const WEB_APP_URL = import.meta.env.WEB_APP_URL;
 const ContactForm = () => {
   return (
     <form 
@@ -31,7 +31,7 @@ const ContactForm = () => {
             <input 
             type="email" 
             id="email" 
-            name="email" 
+            name="email" gi
             placeholder="Email"
             required>
             </input>
