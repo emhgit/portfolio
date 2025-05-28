@@ -13,10 +13,13 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
-.project-card img {
-    width: 80%;
-    height: 80%
+.project-card iframe {
+    width: 90%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 8px;
 }
+
 
 @media (max-width: 700px) {
     .project-card {
