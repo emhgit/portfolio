@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styles from "./ContactForm.module.css";
+import { useNavigate } from "react-router-dom";
 
 const WEB_APP_URL = import.meta.env.VITE_WEB_APP_URL;
 const ContactForm = () => {
@@ -7,9 +8,11 @@ const ContactForm = () => {
   const [last, setLast] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
 
     const formData = new URLSearchParams();
     formData.append("first", first);
@@ -19,7 +22,7 @@ const ContactForm = () => {
     console.log(WEB_APP_URL);
 
     try {
-        const response = await fetch(WEB_APP_URL, {
+      const response = await fetch(WEB_APP_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded"
@@ -27,10 +30,13 @@ const ContactForm = () => {
         body: formData.toString(),
       });
 
-        alert(await response.text());
-      
+      if (response.ok) {
+        navigate("/contact/thank-you");
+      } else throw new Error("Response not ok");
+
     } catch (error) {
-        alert("Form submission failed." + error);
+      console.error(error);
+      alert("Form submission failed.");
     }
   };
 
