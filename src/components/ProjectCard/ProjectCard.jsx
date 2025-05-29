@@ -3,7 +3,6 @@ import styles from "./ProjectCard.module.css";
 
 const ProjectCard = (props) => {
     const title = props.title;
-    //const imageSrc = props["image-src"];
     const src = props.src;
     const description = props.description;
     const githubLink = props["github-link"];
