@@ -3,11 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://emhgit.github.io/portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "npm run copy404 && gh-pages -d build",
+    "copy404": "cp build/index.html build/404.html"
   },
   "dependencies": {
     "react": "^19.1.0",
