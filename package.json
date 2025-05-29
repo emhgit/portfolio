@@ -10,8 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "npm run copy404 && gh-pages -d build",
-    "copy404": "cp build/index.html build/404.html"
+    "deploy": "npm run copy404 && gh-pages -d dist",
+    "copy404": "copy dist\\index.html dist\\404.html"
   },
   "dependencies": {
     "react": "^19.1.0",
