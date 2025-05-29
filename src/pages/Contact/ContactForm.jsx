@@ -86,7 +86,7 @@ const ContactForm = () => {
       </fieldset>
 
       <fieldset>
-        <button type="submit">Submit</button>
+        <button className={styles["submit-button"]} type="submit">Submit</button>
       </fieldset>
     </form>
   );

@@ -11,8 +11,8 @@ const AboutMe = () => {
     <div id={styles["about-me"]}>
     <h1>About Me</h1>
 
-    <div>
-      <img src={null} alt="image-1" />
+    <div className={styles["image-container"]}>
+      <img src="assets/placeholder.jpg" alt="image-1" />
     </div>
       <TextCard 
         title={null}

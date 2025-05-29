@@ -9,7 +9,7 @@ const Hero = () => {
     <main>
 
         <div id={styles["image-container"]}>
-            <img src={null} alt="image-1" />
+            <img src="assets/placeholder.jpg" alt="image-1" />
         </div>
 
         <section id={styles["hero"]}>

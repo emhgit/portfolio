@@ -5,7 +5,7 @@ import styles from "./ThemeToggleButton.module.css"
 const ThemeToggleButton = () => {
     const { theme, toggleTheme } = useContext(ThemeContext);
     return (
-        <button onClick={toggleTheme}>
+        <button className={styles["theme-toggle-button"]} onClick={toggleTheme}>
             <img src={theme === "light" ? "assets/dark-sun.png" : "assets/light-sun.png"} 
             alt="sun-icon" 
             width="50px" 

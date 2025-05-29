@@ -4,8 +4,8 @@ import ThemeToggleButton from '../ThemeToggleButton/ThemeToggleButton.jsx';
 
 function NavBar(){
     return (
-        <nav>
-            <h1><Link to="/" className={styles["nav-link"]}>Elliott Harper</Link></h1>
+        <nav className={styles["nav-bar"]}>
+            <h1 className={styles["nav-h1"]}><Link to="/" className={styles["nav-link"]}>Elliott Harper</Link></h1>
              <ul>
                 <li ><Link to="/about-me" className={styles["nav-link"]}>About Me</Link></li>
                 <li ><Link to="/my-projects" className={styles["nav-link"]}>Projects</Link></li>

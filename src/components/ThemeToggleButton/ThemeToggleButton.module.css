@@ -1,6 +1,6 @@
 @import url(/src/variables.css);
 
-button {
+.theme-toggle-button {
     display: flex;
     align-items: center;
     padding: .5rem 1rem;
@@ -13,13 +13,13 @@ button {
     color: var(--text-color);
 }
 
-button:hover {
+.theme-toggle-button:hover {
     background-color: var(--banner-secondary-color);
     cursor: pointer;
 }
 
 @media (max-width: 600px) {
-    button {
+    .theme-toggle-button {
         padding: .25rem .5rem;
         font-size: .5rem;
     }

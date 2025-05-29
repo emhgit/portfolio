@@ -26,12 +26,16 @@
     color: var(--text-color);
 }
 
-#contact-form button {
+#contact-form .submit-button {
     align-self: center;
+    color: var(--text-color);
     background-color: var(--banner-color);
-    padding: 1rem 2.5rem;
+    padding: 1.5rem 3rem;
     transition: background 0.2s;
     font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
 }
 
 #contact-form button:hover {

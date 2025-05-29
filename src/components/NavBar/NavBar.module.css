@@ -1,6 +1,6 @@
 @import url(/src/variables.css);
 
-nav {
+.nav-bar {
     overflow: auto;
     position: fixed;
     top: 0;
@@ -17,14 +17,14 @@ nav {
     z-index: 100;
 }
 
-h1 {
+.nav-h1 {
     margin: 0;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
-h1 .nav-link {
+.nav-h1 .nav-link {
     font-weight: bold;
 }
 
@@ -54,13 +54,13 @@ ul {
 }
 
 @media (max-width: 900px) {
-    nav {
+    .nav-bar {
         padding: 0.75rem 1rem;
         width: 100vw;
         font-size: 1rem;
     }
 
-    h1 {
+    .nav-h1 {
         font-size: .75rem;
     }
 
@@ -68,7 +68,7 @@ ul {
         gap: 1rem;
     }
 
-    h1 .nav-link {
+    .nav-h1 .nav-link {
         font-size: .75rem;
     }
     .nav-link {
