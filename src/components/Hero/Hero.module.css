@@ -1,107 +1,107 @@
 @import url(/src/variables.css);
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    gap: 2rem;
-    margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  margin: 40px 0;
 }
 
 #image-container {
-    display: flex;
-    background-color: var(--banner-color);
-    width: 20rem;
-    height: 20rem;
-    border-radius: 50%;
+  display: flex;
+  background-color: var(--banner-color);
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
 }
 
 #image-container img {
-    justify-self: center;
-    align-self: center;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-
+  justify-self: center;
+  align-self: center;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 #hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 #hero h1 {
-    font-size: 5rem;
+  font-size: 5rem;
 }
 
 #hero h2 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 #hero #button-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 #hero .button {
-    font-weight: bold;
-    border: none;
-    border-radius: 24px;
-    font-size: 2rem;
-    background-color: var(--banner-color);
-    width: 250px;
-    height: 100px;
-    transition: background 0.2s;
+  font-weight: bold;
+  border: none;
+  border-radius: 24px;
+  font-size: 2rem;
+  background-color: var(--banner-color);
+  width: 250px;
+  height: 100px;
+  transition: background 0.2s;
+  color: var(--text-color);
 }
 
 #hero .button:hover {
-    background-color: var(--banner-secondary-color);
+  background-color: var(--banner-secondary-color);
+  cursor: pointer;
 }
 
 #hero .button .nav-link {
-    text-decoration: none;
-    color: var(--text-color)
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 #socials-container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #socials-container img {
-    margin: 20px;
-    width: 80px;
-    height: 80px;
+  margin: 20px;
+  width: 80px;
+  height: 80px;
 }
-
 
 @media (max-width: 1000px) {
-    main {
-        flex-direction: column;
-        align-items: center;
-    }
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #hero {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-@media (max-width: 640px){
-    #hero h1 {
-        font-size: 3rem;
-    }
-    #hero h2 {
-        font-size: 2rem;
-    }
+@media (max-width: 640px) {
+  #hero h1 {
+    font-size: 3rem;
+  }
+  #hero h2 {
+    font-size: 2rem;
+  }
 
-    #hero #button-container {
-        flex-direction: column;
-    }
+  #hero #button-container {
+    flex-direction: column;
+  }
 }
