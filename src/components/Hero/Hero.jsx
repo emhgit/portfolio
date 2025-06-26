@@ -49,7 +49,7 @@ const Hero = () => {
 
           <a
             className={styles["nav-link"]}
-            href="assets/resume_v1.pdf"
+            href="assets/resume_v5.pdf"
             target="_blank"
           >
             <button className={styles["button"]}>My Resume</button>
