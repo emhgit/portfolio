@@ -52,7 +52,8 @@ main {
   border: none;
   border-radius: 24px;
   font-size: 2rem;
-  background-color: var(--banner-color);
+  background-color: var(--bg-color);
+  border: 1px solid var(--banner-tertiary-color);
   width: 250px;
   height: 100px;
   transition: background 0.2s;
