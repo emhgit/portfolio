@@ -58,9 +58,7 @@ function NavBar() {
             </Link>
           </li>
         </ul>
-        <div className={styles["nav-actions"]}>
-          <ThemeToggleButton />
-        </div>
+        <div className={styles["nav-actions"]}></div>
       </div>
 
       <button

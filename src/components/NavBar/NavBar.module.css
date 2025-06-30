@@ -34,10 +34,6 @@
   transition: color 0.2s ease;
 }
 
-.nav-h1 .nav-link:hover {
-  color: var(--banner-secondary-color);
-}
-
 .nav-menu {
   display: flex;
   align-items: center;

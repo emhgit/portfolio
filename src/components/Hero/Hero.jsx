@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <main>
       <div id={styles["image-container"]}>
-        <img src="assets/placeholder.jpg" alt="image-1" />
+        <img src="assets/menobg.png" alt="image-1" />
       </div>
 
       <section id={styles["hero"]}>
