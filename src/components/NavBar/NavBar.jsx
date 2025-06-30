@@ -41,11 +41,11 @@ function NavBar() {
           </li>
           <li className={styles["nav-item"]}>
             <Link
-              to="/my-projects"
+              to="/experience"
               className={styles["nav-link"]}
               onClick={closeMenu}
             >
-              Projects
+              Experience
             </Link>
           </li>
           <li className={styles["nav-item"]}>
