@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import styles from "./ContactForm.module.css";
 import { useNavigate } from "react-router-dom";
 
@@ -13,7 +13,6 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-
     const formData = new URLSearchParams();
     formData.append("first", first);
     formData.append("last", last);
@@ -25,7 +24,7 @@ const ContactForm = () => {
       const response = await fetch(WEB_APP_URL, {
         method: "POST",
         headers: {
-          "Content-Type": "application/x-www-form-urlencoded"
+          "Content-Type": "application/x-www-form-urlencoded",
         },
         body: formData.toString(),
       });
@@ -33,7 +32,6 @@ const ContactForm = () => {
       if (response.ok) {
         navigate("/contact/thank-you");
       } else throw new Error("Response not ok");
-
     } catch (error) {
       console.error(error);
       alert("Form submission failed.");
@@ -86,10 +84,12 @@ const ContactForm = () => {
       </fieldset>
 
       <fieldset>
-        <button className={styles["submit-button"]} type="submit">Submit</button>
+        <button className={styles["submit-button"]} type="submit">
+          Submit
+        </button>
       </fieldset>
     </form>
   );
 };
 
-export default ContactForm
+export default ContactForm;

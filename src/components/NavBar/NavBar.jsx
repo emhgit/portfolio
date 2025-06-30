@@ -1,19 +1,82 @@
 import styles from "./NavBar.module.css";
-import { Link } from 'react-router-dom';
-import ThemeToggleButton from '../ThemeToggleButton/ThemeToggleButton.jsx';
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import ThemeToggleButton from "../ThemeToggleButton/ThemeToggleButton.jsx";
 
-function NavBar(){
-    return (
-        <nav className={styles["nav-bar"]}>
-            <h1 className={styles["nav-h1"]}><Link to="/" className={styles["nav-link"]}>Elliott Harper</Link></h1>
-             <ul>
-                <li ><Link to="/about-me" className={styles["nav-link"]}>About Me</Link></li>
-                <li ><Link to="/my-projects" className={styles["nav-link"]}>Projects</Link></li>
-                <li ><Link to="/contact" className={styles["nav-link"]}>Contact</Link></li>
-            </ul>
-            <ThemeToggleButton />
-        </nav>
-    );
+function NavBar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+  return (
+    <nav className={styles["nav-bar"]}>
+      <div className={styles["nav-brand"]}>
+        <h1 className={styles["nav-h1"]}>
+          <Link to="/" className={styles["nav-link"]} onClick={closeMenu}>
+            Elliott Harper
+          </Link>
+        </h1>
+      </div>
+
+      <div
+        className={`${styles["nav-menu"]} ${
+          isMenuOpen ? styles["nav-menu-open"] : ""
+        }`}
+      >
+        <ul className={styles["nav-list"]}>
+          <li className={styles["nav-item"]}>
+            <Link
+              to="/about-me"
+              className={styles["nav-link"]}
+              onClick={closeMenu}
+            >
+              About Me
+            </Link>
+          </li>
+          <li className={styles["nav-item"]}>
+            <Link
+              to="/my-projects"
+              className={styles["nav-link"]}
+              onClick={closeMenu}
+            >
+              Projects
+            </Link>
+          </li>
+          <li className={styles["nav-item"]}>
+            <Link
+              to="/contact"
+              className={styles["nav-link"]}
+              onClick={closeMenu}
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+        <div className={styles["nav-actions"]}>
+          <ThemeToggleButton />
+        </div>
+      </div>
+
+      <button
+        className={`${styles["hamburger"]} ${
+          isMenuOpen ? styles["hamburger-open"] : ""
+        }`}
+        onClick={toggleMenu}
+        aria-label="Toggle navigation menu"
+        aria-expanded={isMenuOpen}
+      >
+        <span className={styles["hamburger-line"]}></span>
+        <span className={styles["hamburger-line"]}></span>
+        <span className={styles["hamburger-line"]}></span>
+      </button>
+    </nav>
+  );
 }
 
 export default NavBar;

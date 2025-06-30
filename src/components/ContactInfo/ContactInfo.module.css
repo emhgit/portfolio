@@ -1,0 +1,20 @@
+@import url(/src/variables.css);
+
+.contact-info {
+  background-color: var(--bg-color);
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem;
+  border: 1px solid var(--banner-tertiary-color);
+}
+
+.contact-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-details p {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
