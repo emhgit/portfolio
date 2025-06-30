@@ -58,21 +58,23 @@ function NavBar() {
             </Link>
           </li>
         </ul>
-        <div className={styles["nav-actions"]}></div>
       </div>
 
-      <button
-        className={`${styles["hamburger"]} ${
-          isMenuOpen ? styles["hamburger-open"] : ""
-        }`}
-        onClick={toggleMenu}
-        aria-label="Toggle navigation menu"
-        aria-expanded={isMenuOpen}
-      >
-        <span className={styles["hamburger-line"]}></span>
-        <span className={styles["hamburger-line"]}></span>
-        <span className={styles["hamburger-line"]}></span>
-      </button>
+      <div className={styles["nav-controls"]}>
+        <ThemeToggleButton />
+        <button
+          className={`${styles["hamburger"]} ${
+            isMenuOpen ? styles["hamburger-open"] : ""
+          }`}
+          onClick={toggleMenu}
+          aria-label="Toggle navigation menu"
+          aria-expanded={isMenuOpen}
+        >
+          <span className={styles["hamburger-line"]}></span>
+          <span className={styles["hamburger-line"]}></span>
+          <span className={styles["hamburger-line"]}></span>
+        </button>
+      </div>
     </nav>
   );
 }
