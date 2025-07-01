@@ -10,7 +10,7 @@ const Experience = () => {
       <div id={styles["projects-container"]}>
         <ProjectCard
           title="Economic Data Visualizer"
-          src="https://www.youtube.com/embed/5x9u66hmFiA"
+          src="https://www.youtube.com/embed/pk1vj2S6Z0Y?si=TZPEmcQy76lWB_7U"
           description="Economic Data Visualizer is a web application that fetches real-time economic indicators from the 
           World Bank API and allows users to generate visual dashboards using Chart.js."
           github-link="https://github.com/emhgit/economic-data-visualizer"

@@ -21,6 +21,7 @@ function App() {
           <Route path="/contact/thank-you" element={<ThankYou />}></Route>
         </Routes>
       </main>
+      <Footer />
     </>
   );
 }
