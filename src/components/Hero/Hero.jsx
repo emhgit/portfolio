@@ -4,7 +4,7 @@ import styles from "./Hero.module.css";
 import { ThemeContext } from "../../context/ThemeContext";
 
 const Hero = () => {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   return (
     <main>
       <div id={styles["image-container"]}>
@@ -13,7 +13,9 @@ const Hero = () => {
 
       <section id={styles["hero"]}>
         <h1>Elliott Harper</h1>
-        <h2>Full-Stack Developer</h2>
+        <h2>Web Dev.</h2>
+        <h2>Math Tutor.</h2>
+
         <section id={styles["socials-container"]}>
           <a href="https://github.com/emhgit" target="_blank">
             <img

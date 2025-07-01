@@ -5,8 +5,9 @@
   padding: 1.5rem 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   border: 1px solid var(--banner-tertiary-color);
+  width: 317px;
 }
 
 .contact-info h2 {
@@ -15,6 +16,6 @@
 }
 
 .contact-details p {
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin: 0.5rem 0;
 }
