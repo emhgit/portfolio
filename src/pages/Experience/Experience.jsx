@@ -45,7 +45,7 @@ const Experience = () => {
           title="USACO Guide"
           description="USACO Guide is a comprehensive resource for students preparing for the USA Computing Olympiad. I contributed UI and content modules to the website."
           github-link="https://github.com/cpinitiative/usaco-guide"
-          thumbnail="public/assets/usaco-guide.jpg"
+          thumbnail="/portfolio/assets/usaco-guide.jpg"
           website-link="https://usaco.guide/"
         />
         <ProjectCard
