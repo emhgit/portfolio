@@ -9,7 +9,7 @@ const WorkExperienceCard = (props) => {
     <div className={styles["work-experience-card"]}>
       <div>
         <h3>{title}</h3>
-        <h3>{company + " " + date}</h3>
+        <h4>{company + " " + date}</h4>
       </div>
       <div>
         <ul>

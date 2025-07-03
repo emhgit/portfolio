@@ -29,17 +29,10 @@ const Hero = () => {
             <img src="assets/leetcode-logo.png" alt="leetcode logo" />
           </a>
           <a
-            href="https://www.hackerrank.com/profile/emhhacker"
+            href="https://www.fiverr.com/elliott_harper?public_mode=true"
             target="_blank"
           >
-            <img
-              src={
-                theme === "light"
-                  ? "assets/dark-hackerrank-logo.png"
-                  : "assets/hackerrank-logo.png"
-              }
-              alt="hackerrank logo"
-            />
+            <img src="assets/fiverr-logo.png" alt="fiverr logo" />
           </a>
         </section>
         <div id={styles["button-container"]}>
