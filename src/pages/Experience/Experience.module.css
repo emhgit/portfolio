@@ -1,18 +1,36 @@
 @import url(/src/variables.css);
 
-
 #projects-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .column-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .column-container h1 {
-    font-size: 2rem;
+  font-size: 2rem;
+}
+
+.button {
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: var(--primary-font, Arial, sans-serif);
+  background-color: var(--bg-color);
+  border: 1px solid var(--banner-tertiary-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: background 0.2s;
+  padding: 0.5rem 1rem;
+  color: var(--text-color);
+}
+
+button:hover {
+  background-color: var(--banner-secondary-color);
+  cursor: pointer;
 }

@@ -13,8 +13,6 @@ const Hero = () => {
 
       <section id={styles["hero"]}>
         <h1>Elliott Harper</h1>
-        <h2>Web Dev.</h2>
-        <h2>Math Tutor.</h2>
 
         <section id={styles["socials-container"]}>
           <a href="https://github.com/emhgit" target="_blank">
@@ -48,14 +46,6 @@ const Hero = () => {
           <Link to="/about-me" className={styles["nav-link"]}>
             <button className={styles["button"]}>About Me</button>
           </Link>
-
-          <a
-            className={styles["nav-link"]}
-            href="assets/resume_v5.pdf"
-            target="_blank"
-          >
-            <button className={styles["button"]}>My Resume</button>
-          </a>
         </div>
       </section>
     </main>

@@ -6,6 +6,15 @@ const Experience = () => {
   return (
     <div className={styles["column-container"]}>
       <h1>Work Experience</h1>
+
+      <a
+        className={styles["nav-link"]}
+        href="assets/resume_v5.pdf"
+        target="_blank"
+      >
+        <button className={styles["button"]}>Resume/CV</button>
+      </a>
+
       <div id={styles["work-experience-container"]}>
         <WorkExperienceCard
           title="Math Tutor"
