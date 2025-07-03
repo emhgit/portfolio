@@ -1,10 +1,34 @@
-import React from "react";
-import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import styles from "./Experience.module.css";
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import WorkExperienceCard from "../../components/WorkExperienceCard/WorkExperienceCard";
 
 const Experience = () => {
   return (
     <div className={styles["column-container"]}>
+      <h1>Work Experience</h1>
+      <div id={styles["work-experience-container"]}>
+        <WorkExperienceCard
+          title="Math Tutor"
+          company="Mathnasium"
+          date="May 2025 - Now"
+          description={[
+            "Tutored and mentored students in math, resulting in improved academic performance and increased confidence in problem-solving",
+            "Collaborated with fellow tutors to develop effective teaching strategies",
+          ]}
+        />
+
+        <WorkExperienceCard
+          title="Web Developer"
+          company="Computer Programming Initiative"
+          date="May 2025 - Now"
+          description={[
+            "Optimized frontend performance by implementing lazy loading for heavy components, reducing hot reload time by ~35% and improving Core Web Vitals (LCP, INP, CLS).",
+            "Enhanced UI/UX by adding a blind mode feature for problem tags and fixing bugs (negative countdown timer, empty URL submissions)",
+            "Improved code clarity in Bronze-level modules by adding inline comments and beginner-friendly explanations for Java/Python code snippets",
+          ]}
+        />
+      </div>
+
       <h1>My Projects</h1>
 
       <div id={styles["projects-container"]}>
