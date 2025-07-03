@@ -1,21 +1,25 @@
 @import url(/src/variables.css);
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--banner-color);
-    padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--banner-color);
+  padding: 1rem;
 }
 
 a {
-    color: var(--text-color)
+  color: var(--text-color);
+}
+
+li {
+  list-style: none;
 }
 
 @media (max-width: 600px) {
-    footer {
-        font-size: .75rem;
-    }
+  footer {
+    font-size: 0.75rem;
+  }
 }

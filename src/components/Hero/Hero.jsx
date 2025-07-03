@@ -4,16 +4,16 @@ import styles from "./Hero.module.css";
 import { ThemeContext } from "../../context/ThemeContext";
 
 const Hero = () => {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   return (
     <main>
-      <div id={styles["image-container"]}>
-        <img src="assets/placeholder.jpg" alt="image-1" />
+      <div>
+        <img src="assets/me-removebg-preview.png" alt="image-2" />
       </div>
 
       <section id={styles["hero"]}>
         <h1>Elliott Harper</h1>
-        <h2>Full-Stack Developer</h2>
+
         <section id={styles["socials-container"]}>
           <a href="https://github.com/emhgit" target="_blank">
             <img
@@ -29,31 +29,16 @@ const Hero = () => {
             <img src="assets/leetcode-logo.png" alt="leetcode logo" />
           </a>
           <a
-            href="https://www.hackerrank.com/profile/emhhacker"
+            href="https://www.fiverr.com/elliott_harper?public_mode=true"
             target="_blank"
           >
-            <img
-              src={
-                theme === "light"
-                  ? "assets/dark-hackerrank-logo.png"
-                  : "assets/hackerrank-logo.png"
-              }
-              alt="hackerrank logo"
-            />
+            <img src="assets/fiverr-logo.png" alt="fiverr logo" />
           </a>
         </section>
         <div id={styles["button-container"]}>
           <Link to="/about-me" className={styles["nav-link"]}>
             <button className={styles["button"]}>About Me</button>
           </Link>
-
-          <a
-            className={styles["nav-link"]}
-            href="assets/resume_v5.pdf"
-            target="_blank"
-          >
-            <button className={styles["button"]}>My Resume</button>
-          </a>
         </div>
       </section>
     </main>
