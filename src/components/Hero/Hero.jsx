@@ -7,8 +7,8 @@ const Hero = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <main>
-      <div id={styles["image-container"]}>
-        <img src="assets/menobg.png" alt="image-1" />
+      <div>
+        <img src="assets/me-removebg-preview.png" alt="image-2" />
       </div>
 
       <section id={styles["hero"]}>
