@@ -48,13 +48,6 @@ const Experience = () => {
         />
 
         <ProjectCard
-          title="StockSage Landing Page"
-          src="https://www.youtube.com/embed/TJlvsc0WRd4"
-          description="StockSage is an AI generated product I used to display my HTML and CSS skills."
-          github-link="https://github.com/emhgit/stocksage"
-        />
-
-        <ProjectCard
           title="Apple Stock Tracker"
           src="https://www.youtube.com/embed/x6DVdsB2IR8"
           description="This is a Google Apps Script automation that populates a Google Sheet with real-time Apple Inc. (AAPL) stock data from the AlphaVantage API."
