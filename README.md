@@ -8,10 +8,7 @@ This portfolio was created using **React**, **Vite**, and **GitHub Pages**.
 
 ## Portfolio Demo
 
-TODO (for me once repo is finished):
-- add screenshots
-- add video preview
-- add website link
+View the website here: [emhgit.github.io/portfolio](https://emhgit.github.io/portfolio/)
 
 ## Features
 
