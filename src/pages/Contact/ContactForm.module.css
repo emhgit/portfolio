@@ -18,6 +18,10 @@
   border: 1px solid var(--banner-tertiary-color);
 }
 
+input {
+  color: var(--text-color);
+}
+
 #contact-form fieldset input {
   padding: 1rem 1.5rem;
   border: none;
