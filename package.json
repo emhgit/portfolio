@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "npm run copy404 && gh-pages -d dist",
+    "deploy": "npm run copy404 && gh-pages -d dist -r https://emhgit:${DEPLOYMENT_TOKEN}@github.com/emhgit/portfolio.git",
     "copy404": "cp dist/index.html dist/404.html"
   },
   "dependencies": {
