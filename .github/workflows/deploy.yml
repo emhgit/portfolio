@@ -32,8 +32,7 @@ jobs:
       - name: Deploy
         run: |
           npm run predeploy
-          npm run copy404
-          gh-pages -d dist -r https://github.com/${{ github.repository }}.git -t ${{ secrets.GITHUB_TOKEN }}
+          npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.DEPLOYMENT_TOKEN }}
           GH_REPO: ${{ github.repository }}
