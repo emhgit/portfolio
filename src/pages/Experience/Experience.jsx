@@ -54,6 +54,7 @@ const Experience = () => {
           description="Economic Data Visualizer is a web application that fetches real-time economic indicators from the 
           World Bank API and allows users to generate visual dashboards using Chart.js."
           github-link="https://github.com/emhgit/economic-data-visualizer"
+          website-link="https://economic-data-visualizer.net/"
         />
 
         <ProjectCard
