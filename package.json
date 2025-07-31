@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "npm run copy404 && gh-pages -d dist -r https://github.com/${GH_REPO}.git -t ${GITHUB_TOKEN}",
+    "deploy": "npm run copy404 && gh-pages -d dist",
     "copy404": "cp dist/index.html dist/404.html"
   },
   "dependencies": {
