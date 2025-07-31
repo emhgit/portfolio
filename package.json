@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "npm run copy404 && gh-pages -d dist",
-    "copy404": "cp dist\\index.html dist\\404.html"
+    "copy404": "cp dist/index.html dist/404.html"
   },
   "dependencies": {
     "react": "^19.1.0",
